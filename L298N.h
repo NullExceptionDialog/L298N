@@ -12,6 +12,7 @@
 class L298N {
 public:
     L298N(int IN1, int IN2, int IN3, int IN4, int ENA = 0, int ENB = 0);
+
     void driveFWD(int speed = 100);
     void driveRVS(int speed = 100);
     void driveLEFT(int speed = 100);
@@ -22,8 +23,10 @@ private:
     int _IN2;
     int _IN3;
     int _IN4;
+
     int _ENA;
     int _ENB;
+
     int _motor;
     int _speed;
     bool _forward;
